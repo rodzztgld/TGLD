@@ -1,0 +1,40 @@
+.center{text-align: center;}
+.left{float: left;}
+.right{float: right;}
+ul{list-style-type: none;}
+/*************************************/
+/* MAIN LAYOUTS PAGE */
+/*************************************/
+
+#sideMenu{
+	width: 7%;
+	background: #4ac7e0;
+	height: 1800px;
+	float: left;
+}
+
+#bodyContent{
+	background: #fff0eb;
+	width: 93%;
+	height: 1800px;
+	float: left;
+}
+
+.list-header-menu{
+	float: right;
+	margin-right: 5%;
+	padding: 10px;
+}
+
+
+
+/*************************************/
+/*  PAGES VIEW  */
+/*************************************/
+
+.logo-wrapper{
+	margin-top: 35%;
+}
+#loginForm{
+	display: none;
+}

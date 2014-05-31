@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+# PAGES
+Route::get('/', 'PagesController@index');
+
+
+# SESSIONS( LOGIN )
+Route::post('/login', ['as' => 'login', 'uses' => 'SessionsController@store']);
+Route::get('/logout', ['as' => 'logout', 'uses' => 'SessionsController@destroy']);

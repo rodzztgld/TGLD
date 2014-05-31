@@ -14,10 +14,29 @@
 
   </head>
   <body>
+
+  <div id="sideMenu">
     
-    
+  </div>
+
+  <div id="bodyContent">
+    <div class="header-menu">
+      <ul class="list-header-menu">
+        @if(!Auth::check())
+          <li id="loginBtn"><a href="#">Login</a></li>
+        @else
+          <li><a href="dashboard">Dashboard</a></li>
+        @endif  
+          
+      </ul>
+    </div>
+    @yield('content')
+  </div>
+
+
     {{ HTML::script('static/js/vendor/jquery.js') }}
     {{ HTML::script('static/js/foundation.min.js') }}
+    {{ HTML::script('static/js/login.js') }}
     <script>
       $(document).foundation();
     </script>

@@ -15,7 +15,11 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
-		]
+		],
+		"files": ["app/TGLD/Helpers/helper.php"],
+		"psr-4":{
+			"TGLD\\": "app/TGLD"
+		}
 	},
 	"scripts": {
 		"post-install-cmd": [
