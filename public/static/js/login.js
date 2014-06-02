@@ -1,6 +1,7 @@
 $(function(){
 	clickLoginBtn();
 	loginForm();
+	testa();
 });
 
 function clickLoginBtn () 
@@ -82,6 +83,16 @@ function loginForm ()
 			},
 			error:function(){}
 
+		});
+	});
+}
+
+function testa (){
+
+	$('.contact-submit-btn').click(function(){
+		$('.letter-block').animate({
+			marginTop: '25%',
+			marginBottom: '-39.5%'
 		});
 	});
 }

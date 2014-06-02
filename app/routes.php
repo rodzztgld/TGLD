@@ -18,3 +18,8 @@ Route::get('/', 'PagesController@index');
 # SESSIONS( LOGIN )
 Route::post('/login', ['as' => 'login', 'uses' => 'SessionsController@store']);
 Route::get('/logout', ['as' => 'logout', 'uses' => 'SessionsController@destroy']);
+
+# CONTACT
+Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@create']);
+Route::post('/contact', ['as' => 'contact', 'uses' => 'ContactController@store']);
+

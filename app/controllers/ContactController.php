@@ -20,7 +20,7 @@ class ContactController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('contact.create');
 	}
 
 

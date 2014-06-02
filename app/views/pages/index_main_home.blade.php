@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
+@section('page_name')
+indexHome  @stop
 @section('content')
-
-<div id="indexHome">
 	<div class="row">
 		<div class="large-12 columns">
 			<div class="logo-wrapper">
@@ -21,7 +21,7 @@
 					<input type="password"  class="login-password" name="password" placeholder="Password">
 
 					<span class="error"></span>
-					
+
 					<input type="checkbox"  class="login-remember" name="remember" id="remember">
 					<label for="remember">Remember me?</label><br/>
 
@@ -31,6 +31,4 @@
 			</div>
 		</div>
 	</div>
-</div>
-
 @stop

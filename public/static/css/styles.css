@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
+
+
 .center{text-align: center;}
 .left{float: left;}
 .right{float: right;}
@@ -9,14 +12,13 @@ ul{list-style-type: none;}
 #sideMenu{
 	width: 7%;
 	background: #4ac7e0;
-	height: 1800px;
+	height: 100%;
 	float: left;
 }
 
 #bodyContent{
-	background: #fff0eb;
 	width: 93%;
-	height: 1800px;
+	height: 100%;
 	float: left;
 }
 
@@ -37,4 +39,177 @@ ul{list-style-type: none;}
 }
 #loginForm{
 	display: none;
+}
+#indexHome{
+	background: #fff0eb;
+}
+
+/*************************************/
+/*  CONTACT VIEW  */
+/*************************************/
+#contactWrapper
+{
+	background: url(../img/contact-bk.jpg);
+	height:979px;
+	background-position: center;
+	overflow: hidden;
+}
+.contact-title{
+	padding: 0;
+	margin: 0;
+	font-weight: 300;
+	font-family: 'Comfortaa', cursive;
+	width: 40%;
+	font-size: 40px;
+	line-height: 50px;
+}
+.left-contact-title{
+	text-align: right;
+	border-bottom: solid 2px #fff;
+	color: #fff;
+	padding-right: 10px;
+	margin-left: 62.5%;
+	margin-top: 4%;
+}
+.right-contact-title{
+	border-top: solid 2px #98bac3;
+	color: #98bac3;
+	margin-left: -3%;
+	padding-left: 10px;
+	margin-top: -.27%;
+}
+.bottom-mail div{
+	background: url(../img/blue-envelope.png) no-repeat;
+	height: 252px;
+	width: 641px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 25.8%;*/
+}
+.letter-block{
+	background: url(../img/letter-block.png) no-repeat;
+	height: 471px;
+	width: 602px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: -15.5%;
+	z-index: 99;
+}
+.top-letter-left-side{
+	width: 50%;
+	float: left;
+	z-index: 0;
+}
+.top-letter-right-side{
+	width: 50%;
+	float: left;
+	z-index: 0;
+}
+
+.top-letter-right-side input{
+	border-radius: 5px;
+	box-shadow: -4px 4px 0px #a3a5a2;
+	width: 80%;
+	padding: 10px 10px;
+	z-index: 0;
+}
+.list-letter-inputs{
+	margin-top: 20%;
+}
+.full-name-contact-letter-icon{
+	background: url(../img/fullname-icon.png) no-repeat;
+	display: block;
+	padding-left:60px;
+}
+.email-contact-letter-icon{
+	background: url(../img/email-icon.png) no-repeat;
+	display: block;
+	padding-left:60px;
+}
+.phone-contact-letter-icon{
+	background: url(../img/phone-icon.png) no-repeat;
+	display: block;
+	padding-left:60px;
+}
+.bottom-letter{
+	padding: 0 30px;
+	margin-top: 3%;
+}
+.bottom-letter textarea{
+	border-radius: 5px;
+	box-shadow: -4px 4px 0px #a3a5a2;
+	height: 195px;
+	z-index: 0;
+}
+.list-letter-title{
+	margin-top: 19%;
+}
+.list-letter-title li{
+	margin: 14px 0 14px 14px;
+	font-family: 'Comfortaa', cursive;
+	font-size: 26px;
+	color: #467f8e;
+	font-weight: 300;
+}
+
+.top-letter-right-side input::-webkit-input-placeholder {
+   font-family: 'Comfortaa', cursive;
+   color: #76a0a9;
+   font-size: 15px;
+}
+
+.top-letter-right-side input:-moz-placeholder { /* Firefox 18- */
+   font-family: 'Comfortaa', cursive;
+   color: #76a0a9; 
+   font-size: 15px;
+}
+
+.top-letter-right-side input::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'Comfortaa', cursive;
+   color: #76a0a9;
+   font-size: 15px; 
+}
+
+.top-letter-right-side input:-ms-input-placeholder {  
+   font-family: 'Comfortaa', cursive;
+   color: #76a0a9; 
+   font-size: 15px; 
+}
+
+.bottom-letter textarea::-webkit-input-placeholder {
+   font-family: 'Comfortaa', cursive;
+   color: #76a0a9;
+   font-size: 15px; 
+}
+
+.bottom-letter textarea:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Comfortaa', cursive;
+   color: #76a0a9;
+   font-size: 15px; 
+}
+
+.bottom-letter textarea::-moz-placeholder {  /* Firefox 19+ */
+  font-family: 'Comfortaa', cursive;
+   color: #76a0a9;
+   font-size: 15px; 
+}
+
+.bottom-letter textarea:-ms-input-placeholder {  
+   font-family: 'Comfortaa', cursive;
+   color: #76a0a9;
+   font-size: 15px; 
+}
+
+.contact-submit-btn{
+    background: url(../img/contact-btn.png);
+    display: block;
+    height: 68px;
+    width: 210px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -7%;
+    cursor: pointer;
 }

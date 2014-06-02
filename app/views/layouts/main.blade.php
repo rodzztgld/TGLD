@@ -1,3 +1,4 @@
+<?php $page_name =  str_replace(' ', '', $__env->yieldContent('page_name'));?>
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -14,12 +15,11 @@
 
   </head>
   <body>
-
   <div id="sideMenu">
     
   </div>
 
-  <div id="bodyContent">
+  <div id="<?php echo $page_name; ?>" class="body-content">
     <div class="header-menu">
       <ul class="list-header-menu">
         @if(!Auth::check())
@@ -27,7 +27,6 @@
         @else
           <li><a href="dashboard">Dashboard</a></li>
         @endif  
-          
       </ul>
     </div>
     @yield('content')
